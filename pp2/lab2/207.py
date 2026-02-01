@@ -1,0 +1,9 @@
+n=int(input())
+arr=list(map(int, input().split()))
+max=arr[0]
+pos=0
+for i in range(n):
+    if arr[i] > max:
+        max = arr[i]
+        pos=i
+print(pos+1)
