@@ -1,0 +1,14 @@
+n = int(input())
+
+if n <= 0:
+    print("No")
+    exit()
+
+for p in [2, 3, 5]:
+    while n % p == 0:
+        n //= p
+
+if n == 1:
+    print("Yes")
+else:
+    print("No")
